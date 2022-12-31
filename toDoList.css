@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.mid {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+    overflow-y: auto;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.icon{
+    height: 25px;
+    padding-top: 2px;
+}
+#newTask{
+    width: 70%;
+    height: 30px;
+    border: none;
+    border-bottom:2px solid blue;
+    background-color: royalblue;
+}
+
+#numberTask{
+    height: 30px;
+    border: none;
+    border-bottom:2px solid blue;
+    background-color: royalblue;
+}
+.input {
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    gap: 5px;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#btn{
+    height: 30px;
+    border: none;
+    background-color: royalblue;
+    border: 2px solid blue;
+    cursor: pointer;
+    width: 50px;
+}
+
+
+
+input::placeholder{
+    color: black;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #todo-list li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: royalblue;
+    border: 2px solid blue;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  
+  #todo-list li button {
+    float: right;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: royalblue;
+    color: blue;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+  }
+
+@media (max-width: 800px ) {
+
+.mid{
+    width: 100%;
+}
+#numberTask{
+    width: 20%;
+}
+
+#btn{
+    width: 10%;
+}
+    }
+
+
+@media (max-width:750px){
+
+#numberTask{
+ width: 30%;
+}
+ }
